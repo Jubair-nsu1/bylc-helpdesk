@@ -17,8 +17,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Form />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/ticket" element={<Form />} />
+          <Route path="/" element={<Login />} />
           
           {user? (<Route path="/dashboard" element={<Dashboard />} />) : (<Route path="/dashboard" element={<Navigate replace to="/login" />} />)  }
           {user? (<Route path="/solvedtickets" element={<SolvedTickets />} />) : (<Route path="/solvedtickets" element={<Navigate replace to="/login" />} />)  }
