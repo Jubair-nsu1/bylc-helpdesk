@@ -130,7 +130,7 @@ const Form = (props) =>
           <div class='d-flex justify-content-center mb-3'>
             <img src={logo} width="180px" height="45px" />
           </div>
-          <h4 class="d-flex justify-content-center mb-5 bg-success text-white">IT Support Request</h4>
+          <h4 class="d-flex justify-content-center mb-5 bg-success text-white">IT Helpdesk</h4>
 
           {/* Clicking Submit button shows a Welcome Message */}
           {submitted && valid && (
