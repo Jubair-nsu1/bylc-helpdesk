@@ -73,6 +73,7 @@ const Form = (props) =>
   // Send table data to DB || Email notification || Submitted Page
   async function TicketSubmit(e) {
     e.preventDefault();
+    setLoading(true);
     // if (values.department && values.email && values.fullname && values.designation && values.subject && values.description  && values.support_needed_on) {
     if (department && email && fullname && designation && problem_type && subject && description  && support_needed_on) {  
       setValid(true);
@@ -121,6 +122,7 @@ const Form = (props) =>
 
     //Set Form submitted true
     setSubmitted(true);
+    setLoading(false);
   };
 
 
@@ -153,16 +155,16 @@ const Form = (props) =>
             )
           }
           {loading && 
-            <div class="d-flex justify-content-center">Please Wait.....</div>
-            // <div class="d-flex justify-content-center">
-            //   <ClipLoader
-            //     color="#36d7b7"
-            //     loading={loading}
-            //     size={150}
-            //     aria-label="Loading Spinner"
-            //     data-testid="loader"
-            //   />
-            // </div>
+            // <div class="d-flex justify-content-center">Please Wait.....</div>
+            <div class="d-flex justify-content-center">
+              <ClipLoader
+                color="#36d7b7"
+                loading={loading}
+                size={150}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            </div>
           }
 
           {/* Form Starts */}
