@@ -1,4 +1,6 @@
 import { useState , useEffect } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
+import RingLoader from "react-spinners/ClipLoader";
 
 //Images
 import logo from '../Images/logo.png';
@@ -50,6 +52,7 @@ const Form = (props) =>
   const [submitted, setSubmitted] = useState(false);
   const [valid, setValid] = useState(false);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   //Email Validator
   const validateEmail = () => {
@@ -133,10 +136,9 @@ const Form = (props) =>
           <h4 class="d-flex justify-content-center mb-5 bg-success text-white">IT Helpdesk</h4>
 
           {/* Clicking Submit button shows a Welcome Message */}
-          {submitted && valid && (
-
-              <div className="success-message mb-3">
-                
+          {!loading && 
+            submitted && valid && (
+              <div className="success-message mb-3">   
                 <h1 style={{fontWeight:'bold' }}>
                   {" "}
                   Thank You {fullname} ! {" "}
@@ -148,7 +150,21 @@ const Form = (props) =>
                 <div> Please wait for the support. </div>
                 <div> Check your email for support details and follow-up. </div>
               </div>
-          )}
+            )
+          }
+          {loading && 
+            // <div class="d-flex justify-content-center">Please Wait.....</div>
+            <div class="d-flex justify-content-center">
+              <RingLoader
+                color="#36d7b7"
+                loading={loading}
+                size={150}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+                speedMultiplier={1}
+              />
+            </div>
+          }
 
           {/* Form Starts */}
           <div class="row">
