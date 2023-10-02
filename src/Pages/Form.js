@@ -157,7 +157,7 @@ const Form = (props) =>
           {loading && 
             // <div class="d-flex justify-content-center">Please Wait.....</div>
             <div class="d-flex justify-content-center">
-              <ClipLoader
+              <RingLoader
                 color="#36d7b7"
                 loading={loading}
                 size={150}
