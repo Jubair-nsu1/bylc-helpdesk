@@ -157,7 +157,10 @@ const Form = (props) =>
           {loading && 
             // <div class="d-flex justify-content-center">Please Wait.....</div>
             <div class="d-flex justify-content-center">
-	      <div><h3 style={{fontWeight:'bold' }}>Processing your request...</h3></div>
+	      <h3 style={{fontWeight:'bold' }}>Processing your request...</h3>
+            </div></br>
+		  
+	    <div class="d-flex justify-content-center">
               <RingLoader
                 color="#36d7b7"
                 loading={loading}
