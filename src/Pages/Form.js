@@ -156,19 +156,21 @@ const Form = (props) =>
           }
           {loading && 
             // <div class="d-flex justify-content-center">Please Wait.....</div>
-            <div class="d-flex justify-content-center">
-	      <h3 style={{fontWeight:'bold' }}>Processing your request...</h3>
-            </div>
-		  
-	    <div class="d-flex justify-content-center">
-              <RingLoader
-                color="#36d7b7"
-                loading={loading}
-                size={150}
-                aria-label="Loading Spinner"
-                data-testid="loader"
-              />
-            </div>
+	    <div>			  
+	            <div class="d-flex justify-content-center">
+		      <h3 style={{fontWeight:'bold' }}>Processing your request...</h3>
+	            </div>
+			  
+		    <div class="d-flex justify-content-center">
+	              <RingLoader
+	                color="#36d7b7"
+	                loading={loading}
+	                size={150}
+	                aria-label="Loading Spinner"
+	                data-testid="loader"
+	              />
+	            </div>
+	    </div>
           }
 
           {/* Form Starts */}
