@@ -1,6 +1,5 @@
 import { useState , useEffect } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
-import PropagateLoader from "react-spinners/PropagateLoader";
 
 //Images
 import logo from '../Images/logo.png';
@@ -162,7 +161,7 @@ const Form = (props) =>
 	            </div>
 			  
 		    <div class="d-flex justify-content-center">
-	              <PropagateLoader
+	              <ClipLoader
 	                color="#36d7b7"
 	                loading={loading}
 	                size={150}
