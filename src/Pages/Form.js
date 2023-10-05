@@ -137,8 +137,7 @@ const Form = (props) =>
           <h4 class="d-flex justify-content-center mb-5 bg-success text-white">IT Helpdesk</h4>
 
           {/* Clicking Submit button shows a Welcome Message */}
-          {!loading && 
-            submitted && valid && (
+          {!loading && valid && (
               <div className="success-message mb-3">   
                 <h1 style={{fontWeight:'bold' }}>
                   {" "}
