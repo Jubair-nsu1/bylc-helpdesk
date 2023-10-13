@@ -268,6 +268,8 @@ const Form = (props) =>
                         <option selected>Select Support Type</option>
                           <option value="Product Requisition" >Product Requisition</option>
                           <option value="Employee Onboarding" >Employee Onboarding</option>
+			  <option value="Employee Onboarding" >Laptop Setup For Assessments</option>
+			  <option value="Employee Onboarding" >BYLC Website Update</option>
                           <option value="Hardware Repair" >Hardware Repair</option>
                           <option value="Software Issue" >Software Issue</option>
                           <option value="Internet" >Internet</option>
