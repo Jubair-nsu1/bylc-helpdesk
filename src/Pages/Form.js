@@ -247,6 +247,7 @@ const Form = (props) =>
                         <option value="Assistant Manager" >Assistant Manager</option>
                         <option value="Senior Executive" >Senior Executive</option>
                         <option value="Executive" >Executive</option>
+		      	<option value="Junior Executive" >Junior Executive</option>
                         <option value="Intern" >Intern</option>
 										</select>
 									</div>
