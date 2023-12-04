@@ -1,6 +1,7 @@
 import {useEffect,useState} from 'react';
 import defaultImage from './image/no_image.png' 
 import {SERVER_URL} from '../../../Services/helper'
+const moment = require('moment');
 
 const SolvedTable = () => {
     const[record,setRecord] = useState([])
@@ -54,6 +55,7 @@ const SolvedTable = () => {
                             <th style={{fontWeight:'bold'}}>Name</th>
                             <th style={{fontWeight:'bold'}}>Issue Type</th>
                             <th style={{fontWeight:'bold'}}>Priority</th>
+                            <th style={{fontWeight:'bold'}}>Date</th>
                             <th style={{fontWeight:'bold'}}>View Details</th>
                           </tr>
                         </thead>
@@ -66,6 +68,7 @@ const SolvedTable = () => {
                               <td>{item.fullname}</td>
                               <td>{item.problem_type}</td>
                               <td>{item.priority}</td>
+                              <td>{moment(item.requestDate).format('DD MMM')}</td>
                               <td><button class="btn btn-success" onClick={(e)=>showDetail(item._id)} data-toggle="modal" data-target="#myModal">Get Details</button></td>
                             </tr>
                           )}
