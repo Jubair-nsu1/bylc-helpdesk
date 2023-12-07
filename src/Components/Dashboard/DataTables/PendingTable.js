@@ -22,6 +22,8 @@ const Table = () => {
         support_needed_on:"",
         message:"",
         holdReason:"",
+        requestDate:""
+        
     })
 
 
@@ -130,7 +132,6 @@ const Table = () => {
                           </tr>
                         </thead>
                         <tbody>
-                        
                           {record.map((item,index)=>
                             <tr key={index}> 
                               <td>{index + 1}</td>
@@ -147,9 +148,7 @@ const Table = () => {
                 </div>
             </div>
         </div>
- 
- 
-
+        
       {/* First Model */} 
       <div class="modal fade" aria-hidden="true" id="myModal" >
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -211,12 +210,11 @@ const Table = () => {
                       </tr>
                       <tr>
                         <td style={{fontWeight:'bold'}}>Description</td>
-                        <td>{modeldata.description}</td>
+                        <td style={{whiteSpace: 'pre-wrap' }}>{modeldata.description}</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-
 
 
                 <div class="container-sm border rounded border-success shadow-sm  mb-4">
