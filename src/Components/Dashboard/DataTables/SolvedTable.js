@@ -103,8 +103,8 @@ const SolvedTable = () => {
                 </div>
 
                 <div class="container-sm border rounded border-success shadow-sm mb-4">
-                  <a style={{fontWeight:'bold'}}>Subject </a><br/><p>{modeldata.subject}</p>
-                  <a style={{fontWeight:'bold'}}>Description </a><br/><p>{modeldata.description}</p>
+                  <a style={{fontWeight:'bold', textDecorationLine: 'underline'}}>Subject : </a><br/><p>{modeldata.subject}</p>
+                  <a style={{fontWeight:'bold', textDecorationLine: 'underline'}}>Description : </a><br/><p style={{whiteSpace: 'pre-wrap' }}>{modeldata.description}</p>
                 </div>
 
                 <div class="container-sm border rounded border-success shadow-sm  mb-4">
