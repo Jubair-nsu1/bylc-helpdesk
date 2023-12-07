@@ -180,7 +180,7 @@ const HoldTable = () => {
                       </tr>
                       <tr>
                         <td style={{fontWeight:'bold'}}>Description</td>
-                        <td>{modeldata.description}</td>
+                        <td style={{whiteSpace: 'pre-wrap' }}>{modeldata.description}</td>
                       </tr>
                     </tbody>
                   </table>
