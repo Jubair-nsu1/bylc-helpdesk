@@ -191,6 +191,7 @@ const Form = (props) =>
                           <option value="OPD" >OPD</option>
                           <option value="LDT" >LDT</option>
                           <option value="PDT" >PDT</option>
+			  <option value="LDT" >RME</option>
 			  <option value="BIJOYEE PROJECT" >USAID BIJOYEE PROJECT</option>
                       </select>
                     </div>
