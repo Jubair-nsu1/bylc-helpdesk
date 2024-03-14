@@ -184,15 +184,15 @@ const Form = (props) =>
                           <option value="Finance" >Finance and Accounts</option>
                           <option value="Administration" >Administration</option>		 
                           <option value="Procurement" >Procurement</option>
-                          <option value="Marcom" >Marketing & Communication</option>
+                          <option value="Marketing & Communication" >Marketing & Communication</option>
                           <option value="Ventures" >Ventures</option>
                           <option value="Grants" >Grants</option>
                           <option value="BYLCx" >BYLCx</option>
                           <option value="OPD" >OPD</option>
                           <option value="LDT" >LDT</option>
                           <option value="PDT" >PDT</option>
-			  <option value="LDT" >RME</option>
-			  <option value="BIJOYEE PROJECT" >USAID BIJOYEE PROJECT</option>
+			  <option value="RME" >RME</option>
+			  <option value="USAID BIJOYEE PROJECT" >USAID BIJOYEE PROJECT</option>
                       </select>
                     </div>
                   </div>
