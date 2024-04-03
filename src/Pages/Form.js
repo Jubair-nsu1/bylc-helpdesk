@@ -180,19 +180,18 @@ const Form = (props) =>
                     <div class="input-group mb-3">
                       <select class="form-select" name="department" value={department} onChange={e => setDepartment(e.target.value)}>
                         <option selected>Select Department</option>
-                          <option value="HRMD" >HRMD</option>
-                          <option value="Finance" >Finance and Accounts</option>
+                          <option value="HRM&D" >HRM&D</option>
+                          <option value="Finance and Accounts" >Finance and Accounts</option>
                           <option value="Administration" >Administration</option>		 
-                          <option value="Procurement" >Procurement</option>
+                          <option value="Supply Chain Management" >Supply Chain Management</option>
                           <option value="Marketing & Communication" >Marketing & Communication</option>
                           <option value="Ventures" >Ventures</option>
-                          <option value="Grants" >Grants</option>
+                          <option value="Grants Management" >Grants Management</option>
                           <option value="BYLCx" >BYLCx</option>
-                          <option value="OPD" >OPD</option>
-                          <option value="LDT" >LDT</option>
-                          <option value="PDT" >PDT</option>
+                          <option value="OPD & JP" >OPD & JP</option>
+                          <option value="SDP" >SDP</option>
 			  <option value="RME" >RME</option>
-			  <option value="USAID BIJOYEE PROJECT" >USAID BIJOYEE PROJECT</option>
+			  <option value="USAID BIJOYEE ACTIVITY PROJECT" >USAID BIJOYEE ACTIVITY PROJECT</option>
                       </select>
                     </div>
                   </div>
